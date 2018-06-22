@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F5EB893929D7CDEBA70B0CD /* Pods_Effeh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF0EB509CBA2B3CBAFDC209 /* Pods_Effeh.framework */; };
+		6F9C7ED40530092E65339451 /* Pods_EffehBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1330DE19D59371EA0FC8AF /* Pods_EffehBoard.framework */; };
+		8A4A45A820DD172D008E6E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A45A720DD172D008E6E59 /* AppDelegate.swift */; };
+		8A4A45AA20DD172D008E6E59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A45A920DD172D008E6E59 /* ViewController.swift */; };
+		8A4A45AD20DD172D008E6E59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4A45AB20DD172D008E6E59 /* Main.storyboard */; };
+		8A4A45AF20DD172E008E6E59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4A45AE20DD172E008E6E59 /* Assets.xcassets */; };
+		8A4A45B220DD172E008E6E59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4A45B020DD172E008E6E59 /* LaunchScreen.storyboard */; };
+		8A4A45BD20DD172E008E6E59 /* EffehTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A45BC20DD172E008E6E59 /* EffehTests.swift */; };
+		8A4A45C820DD172E008E6E59 /* EffehUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A45C720DD172E008E6E59 /* EffehUITests.swift */; };
+		8A4A45DC20DD17EC008E6E59 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A45DB20DD17EC008E6E59 /* KeyboardViewController.swift */; };
+		8A4A45E020DD17EC008E6E59 /* EffehBoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A4A45D920DD17EC008E6E59 /* EffehBoard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E266D2A04A69DEA9028CF983 /* Pods_EffehTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBC062D0740220237B2994E /* Pods_EffehTests.framework */; };
+		E2EDFD6DF68A142145CC5143 /* Pods_EffehUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4275E0C2B1A4C368DD4DF122 /* Pods_EffehUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A4A45B920DD172E008E6E59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A4A459C20DD172C008E6E59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A4A45A320DD172C008E6E59;
+			remoteInfo = Effeh;
+		};
+		8A4A45C420DD172E008E6E59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A4A459C20DD172C008E6E59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A4A45A320DD172C008E6E59;
+			remoteInfo = Effeh;
+		};
+		8A4A45DE20DD17EC008E6E59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A4A459C20DD172C008E6E59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A4A45D820DD17EC008E6E59;
+			remoteInfo = EffehBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A4A45E420DD17EC008E6E59 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8A4A45E020DD17EC008E6E59 /* EffehBoard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0195CFA2EC8BFFD13030A7C4 /* Pods-EffehUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffehUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EffehUITests/Pods-EffehUITests.release.xcconfig"; sourceTree = "<group>"; };
+		080B59BF5ADA23261BD74E63 /* Pods-EffehBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffehBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-EffehBoard/Pods-EffehBoard.release.xcconfig"; sourceTree = "<group>"; };
+		0C41439A02F7CC1FEE3A3A17 /* Pods-Effeh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Effeh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Effeh/Pods-Effeh.debug.xcconfig"; sourceTree = "<group>"; };
+		105C069162E4F391592752CF /* Pods-EffehUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffehUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EffehUITests/Pods-EffehUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CE6E1C6A552DC7099B15996 /* Pods-Effeh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Effeh.release.xcconfig"; path = "Pods/Target Support Files/Pods-Effeh/Pods-Effeh.release.xcconfig"; sourceTree = "<group>"; };
+		362599C9D67CBFF48F4F159C /* Pods-EffehBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffehBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EffehBoard/Pods-EffehBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		4275E0C2B1A4C368DD4DF122 /* Pods_EffehUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EffehUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AFDB7327DC4D87A60236069 /* Pods-EffehTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffehTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EffehTests/Pods-EffehTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F1330DE19D59371EA0FC8AF /* Pods_EffehBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EffehBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4A45A420DD172D008E6E59 /* Effeh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Effeh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4A45A720DD172D008E6E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A4A45A920DD172D008E6E59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A4A45AC20DD172D008E6E59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A4A45AE20DD172E008E6E59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A4A45B120DD172E008E6E59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A4A45B320DD172E008E6E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A4A45B820DD172E008E6E59 /* EffehTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EffehTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4A45BC20DD172E008E6E59 /* EffehTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffehTests.swift; sourceTree = "<group>"; };
+		8A4A45BE20DD172E008E6E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A4A45C320DD172E008E6E59 /* EffehUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EffehUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4A45C720DD172E008E6E59 /* EffehUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffehUITests.swift; sourceTree = "<group>"; };
+		8A4A45C920DD172E008E6E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A4A45D920DD17EC008E6E59 /* EffehBoard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EffehBoard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A4A45DB20DD17EC008E6E59 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		8A4A45DD20DD17EC008E6E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1990A0741DEF9B59E891F97 /* Pods-EffehTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffehTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EffehTests/Pods-EffehTests.release.xcconfig"; sourceTree = "<group>"; };
+		BBF0EB509CBA2B3CBAFDC209 /* Pods_Effeh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Effeh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBBC062D0740220237B2994E /* Pods_EffehTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EffehTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A4A45A120DD172C008E6E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5EB893929D7CDEBA70B0CD /* Pods_Effeh.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4A45B520DD172E008E6E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E266D2A04A69DEA9028CF983 /* Pods_EffehTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4A45C020DD172E008E6E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2EDFD6DF68A142145CC5143 /* Pods_EffehUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4A45D620DD17EC008E6E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F9C7ED40530092E65339451 /* Pods_EffehBoard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A4A459B20DD172C008E6E59 = {
+			isa = PBXGroup;
+			children = (
+				8A4A45A620DD172D008E6E59 /* Effeh */,
+				8A4A45DA20DD17EC008E6E59 /* EffehBoard */,
+				8A4A45BB20DD172E008E6E59 /* EffehTests */,
+				8A4A45C620DD172E008E6E59 /* EffehUITests */,
+				8A4A45A520DD172D008E6E59 /* Products */,
+				CC870C3839A96C2D293C6258 /* Pods */,
+				A6EA0FCDC15E9C3074F1C814 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A4A45A520DD172D008E6E59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A4A45A420DD172D008E6E59 /* Effeh.app */,
+				8A4A45B820DD172E008E6E59 /* EffehTests.xctest */,
+				8A4A45C320DD172E008E6E59 /* EffehUITests.xctest */,
+				8A4A45D920DD17EC008E6E59 /* EffehBoard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A4A45A620DD172D008E6E59 /* Effeh */ = {
+			isa = PBXGroup;
+			children = (
+				8A4A45A720DD172D008E6E59 /* AppDelegate.swift */,
+				8A4A45A920DD172D008E6E59 /* ViewController.swift */,
+				8A4A45AB20DD172D008E6E59 /* Main.storyboard */,
+				8A4A45AE20DD172E008E6E59 /* Assets.xcassets */,
+				8A4A45B020DD172E008E6E59 /* LaunchScreen.storyboard */,
+				8A4A45B320DD172E008E6E59 /* Info.plist */,
+			);
+			path = Effeh;
+			sourceTree = "<group>";
+		};
+		8A4A45BB20DD172E008E6E59 /* EffehTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A4A45BC20DD172E008E6E59 /* EffehTests.swift */,
+				8A4A45BE20DD172E008E6E59 /* Info.plist */,
+			);
+			path = EffehTests;
+			sourceTree = "<group>";
+		};
+		8A4A45C620DD172E008E6E59 /* EffehUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8A4A45C720DD172E008E6E59 /* EffehUITests.swift */,
+				8A4A45C920DD172E008E6E59 /* Info.plist */,
+			);
+			path = EffehUITests;
+			sourceTree = "<group>";
+		};
+		8A4A45DA20DD17EC008E6E59 /* EffehBoard */ = {
+			isa = PBXGroup;
+			children = (
+				8A4A45DB20DD17EC008E6E59 /* KeyboardViewController.swift */,
+				8A4A45DD20DD17EC008E6E59 /* Info.plist */,
+			);
+			path = EffehBoard;
+			sourceTree = "<group>";
+		};
+		A6EA0FCDC15E9C3074F1C814 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBF0EB509CBA2B3CBAFDC209 /* Pods_Effeh.framework */,
+				7F1330DE19D59371EA0FC8AF /* Pods_EffehBoard.framework */,
+				CBBC062D0740220237B2994E /* Pods_EffehTests.framework */,
+				4275E0C2B1A4C368DD4DF122 /* Pods_EffehUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC870C3839A96C2D293C6258 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C41439A02F7CC1FEE3A3A17 /* Pods-Effeh.debug.xcconfig */,
+				1CE6E1C6A552DC7099B15996 /* Pods-Effeh.release.xcconfig */,
+				362599C9D67CBFF48F4F159C /* Pods-EffehBoard.debug.xcconfig */,
+				080B59BF5ADA23261BD74E63 /* Pods-EffehBoard.release.xcconfig */,
+				4AFDB7327DC4D87A60236069 /* Pods-EffehTests.debug.xcconfig */,
+				A1990A0741DEF9B59E891F97 /* Pods-EffehTests.release.xcconfig */,
+				105C069162E4F391592752CF /* Pods-EffehUITests.debug.xcconfig */,
+				0195CFA2EC8BFFD13030A7C4 /* Pods-EffehUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A4A45A320DD172C008E6E59 /* Effeh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A4A45CC20DD172E008E6E59 /* Build configuration list for PBXNativeTarget "Effeh" */;
+			buildPhases = (
+				250B1903AC9194B354522DAE /* [CP] Check Pods Manifest.lock */,
+				8A4A45A020DD172C008E6E59 /* Sources */,
+				8A4A45A120DD172C008E6E59 /* Frameworks */,
+				8A4A45A220DD172C008E6E59 /* Resources */,
+				8A4A45E420DD17EC008E6E59 /* Embed App Extensions */,
+				0199FD2A2F3C0C2FAEDC3EF2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A4A45DF20DD17EC008E6E59 /* PBXTargetDependency */,
+			);
+			name = Effeh;
+			productName = Effeh;
+			productReference = 8A4A45A420DD172D008E6E59 /* Effeh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A4A45B720DD172E008E6E59 /* EffehTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A4A45CF20DD172E008E6E59 /* Build configuration list for PBXNativeTarget "EffehTests" */;
+			buildPhases = (
+				52D433FE773681887443253D /* [CP] Check Pods Manifest.lock */,
+				8A4A45B420DD172E008E6E59 /* Sources */,
+				8A4A45B520DD172E008E6E59 /* Frameworks */,
+				8A4A45B620DD172E008E6E59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A4A45BA20DD172E008E6E59 /* PBXTargetDependency */,
+			);
+			name = EffehTests;
+			productName = EffehTests;
+			productReference = 8A4A45B820DD172E008E6E59 /* EffehTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8A4A45C220DD172E008E6E59 /* EffehUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A4A45D220DD172E008E6E59 /* Build configuration list for PBXNativeTarget "EffehUITests" */;
+			buildPhases = (
+				F2E8A47BF7C4869074001149 /* [CP] Check Pods Manifest.lock */,
+				8A4A45BF20DD172E008E6E59 /* Sources */,
+				8A4A45C020DD172E008E6E59 /* Frameworks */,
+				8A4A45C120DD172E008E6E59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A4A45C520DD172E008E6E59 /* PBXTargetDependency */,
+			);
+			name = EffehUITests;
+			productName = EffehUITests;
+			productReference = 8A4A45C320DD172E008E6E59 /* EffehUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8A4A45D820DD17EC008E6E59 /* EffehBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A4A45E120DD17EC008E6E59 /* Build configuration list for PBXNativeTarget "EffehBoard" */;
+			buildPhases = (
+				3E4EFAE4097DF963C33020AE /* [CP] Check Pods Manifest.lock */,
+				8A4A45D520DD17EC008E6E59 /* Sources */,
+				8A4A45D620DD17EC008E6E59 /* Frameworks */,
+				8A4A45D720DD17EC008E6E59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EffehBoard;
+			productName = EffehBoard;
+			productReference = 8A4A45D920DD17EC008E6E59 /* EffehBoard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A4A459C20DD172C008E6E59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Michael Attia";
+				TargetAttributes = {
+					8A4A45A320DD172C008E6E59 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					8A4A45B720DD172E008E6E59 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8A4A45A320DD172C008E6E59;
+					};
+					8A4A45C220DD172E008E6E59 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8A4A45A320DD172C008E6E59;
+					};
+					8A4A45D820DD17EC008E6E59 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 8A4A459F20DD172C008E6E59 /* Build configuration list for PBXProject "Effeh" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A4A459B20DD172C008E6E59;
+			productRefGroup = 8A4A45A520DD172D008E6E59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A4A45A320DD172C008E6E59 /* Effeh */,
+				8A4A45B720DD172E008E6E59 /* EffehTests */,
+				8A4A45C220DD172E008E6E59 /* EffehUITests */,
+				8A4A45D820DD17EC008E6E59 /* EffehBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A4A45A220DD172C008E6E59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4A45B220DD172E008E6E59 /* LaunchScreen.storyboard in Resources */,
+				8A4A45AF20DD172E008E6E59 /* Assets.xcassets in Resources */,
+				8A4A45AD20DD172D008E6E59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4A45B620DD172E008E6E59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4A45C120DD172E008E6E59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4A45D720DD17EC008E6E59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0199FD2A2F3C0C2FAEDC3EF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Effeh/Pods-Effeh-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Effeh/Pods-Effeh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		250B1903AC9194B354522DAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Effeh-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E4EFAE4097DF963C33020AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EffehBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52D433FE773681887443253D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EffehTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2E8A47BF7C4869074001149 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EffehUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A4A45A020DD172C008E6E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4A45AA20DD172D008E6E59 /* ViewController.swift in Sources */,
+				8A4A45A820DD172D008E6E59 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4A45B420DD172E008E6E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4A45BD20DD172E008E6E59 /* EffehTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4A45BF20DD172E008E6E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4A45C820DD172E008E6E59 /* EffehUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A4A45D520DD17EC008E6E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A4A45DC20DD17EC008E6E59 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A4A45BA20DD172E008E6E59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A4A45A320DD172C008E6E59 /* Effeh */;
+			targetProxy = 8A4A45B920DD172E008E6E59 /* PBXContainerItemProxy */;
+		};
+		8A4A45C520DD172E008E6E59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A4A45A320DD172C008E6E59 /* Effeh */;
+			targetProxy = 8A4A45C420DD172E008E6E59 /* PBXContainerItemProxy */;
+		};
+		8A4A45DF20DD17EC008E6E59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A4A45D820DD17EC008E6E59 /* EffehBoard */;
+			targetProxy = 8A4A45DE20DD17EC008E6E59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A4A45AB20DD172D008E6E59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A4A45AC20DD172D008E6E59 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A4A45B020DD172E008E6E59 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A4A45B120DD172E008E6E59 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A4A45CA20DD172E008E6E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A4A45CB20DD172E008E6E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A4A45CD20DD172E008E6E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C41439A02F7CC1FEE3A3A17 /* Pods-Effeh.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 855NGKW9YC;
+				INFOPLIST_FILE = Effeh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.Effeh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8A4A45CE20DD172E008E6E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE6E1C6A552DC7099B15996 /* Pods-Effeh.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 855NGKW9YC;
+				INFOPLIST_FILE = Effeh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.Effeh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8A4A45D020DD172E008E6E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AFDB7327DC4D87A60236069 /* Pods-EffehTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 855NGKW9YC;
+				INFOPLIST_FILE = EffehTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.EffehTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Effeh.app/Effeh";
+			};
+			name = Debug;
+		};
+		8A4A45D120DD172E008E6E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1990A0741DEF9B59E891F97 /* Pods-EffehTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 855NGKW9YC;
+				INFOPLIST_FILE = EffehTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.EffehTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Effeh.app/Effeh";
+			};
+			name = Release;
+		};
+		8A4A45D320DD172E008E6E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 105C069162E4F391592752CF /* Pods-EffehUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 855NGKW9YC;
+				INFOPLIST_FILE = EffehUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.EffehUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Effeh;
+			};
+			name = Debug;
+		};
+		8A4A45D420DD172E008E6E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0195CFA2EC8BFFD13030A7C4 /* Pods-EffehUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 855NGKW9YC;
+				INFOPLIST_FILE = EffehUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.EffehUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Effeh;
+			};
+			name = Release;
+		};
+		8A4A45E220DD17EC008E6E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 362599C9D67CBFF48F4F159C /* Pods-EffehBoard.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 855NGKW9YC;
+				INFOPLIST_FILE = EffehBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.Effeh.EffehBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A4A45E320DD17EC008E6E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 080B59BF5ADA23261BD74E63 /* Pods-EffehBoard.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 855NGKW9YC;
+				INFOPLIST_FILE = EffehBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.Effeh.EffehBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A4A459F20DD172C008E6E59 /* Build configuration list for PBXProject "Effeh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4A45CA20DD172E008E6E59 /* Debug */,
+				8A4A45CB20DD172E008E6E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A4A45CC20DD172E008E6E59 /* Build configuration list for PBXNativeTarget "Effeh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4A45CD20DD172E008E6E59 /* Debug */,
+				8A4A45CE20DD172E008E6E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A4A45CF20DD172E008E6E59 /* Build configuration list for PBXNativeTarget "EffehTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4A45D020DD172E008E6E59 /* Debug */,
+				8A4A45D120DD172E008E6E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A4A45D220DD172E008E6E59 /* Build configuration list for PBXNativeTarget "EffehUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4A45D320DD172E008E6E59 /* Debug */,
+				8A4A45D420DD172E008E6E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A4A45E120DD17EC008E6E59 /* Build configuration list for PBXNativeTarget "EffehBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4A45E220DD17EC008E6E59 /* Debug */,
+				8A4A45E320DD17EC008E6E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A4A459C20DD172C008E6E59 /* Project object */;
+}
