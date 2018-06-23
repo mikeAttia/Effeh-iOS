@@ -18,6 +18,19 @@
 		8A4A45C820DD172E008E6E59 /* EffehUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A45C720DD172E008E6E59 /* EffehUITests.swift */; };
 		8A4A45DC20DD17EC008E6E59 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A45DB20DD17EC008E6E59 /* KeyboardViewController.swift */; };
 		8A4A45E020DD17EC008E6E59 /* EffehBoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A4A45D920DD17EC008E6E59 /* EffehBoard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8A85F9C320DE4A2400FBEC78 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBEA920DE43B7002C05EA /* Colors.swift */; };
+		8A85F9C420DE4A2600FBEC78 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBEAB20DE44E1002C05EA /* UIColor+hex.swift */; };
+		8ACCBE9420DD7E93002C05EA /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9320DD7E93002C05EA /* KeyboardButton.swift */; };
+		8ACCBE9720DD8050002C05EA /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9620DD8050002C05EA /* KeyboardView.xib */; };
+		8ACCBE9920DD8063002C05EA /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9820DD8063002C05EA /* KeyboardView.swift */; };
+		8ACCBE9C20DD8F52002C05EA /* ImageReel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9B20DD8F52002C05EA /* ImageReel.xib */; };
+		8ACCBE9E20DD8F60002C05EA /* ImageReel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9D20DD8F60002C05EA /* ImageReel.swift */; };
+		8ACCBEA120DE2F6A002C05EA /* TabsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ACCBEA020DE2F6A002C05EA /* TabsView.xib */; };
+		8ACCBEA320DE2F76002C05EA /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBEA220DE2F76002C05EA /* TabsView.swift */; };
+		8ACCBEA420DE3551002C05EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4A45AE20DD172E008E6E59 /* Assets.xcassets */; };
+		8ACCBEA720DE3BCE002C05EA /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBEA620DE3BCE002C05EA /* TabItem.swift */; };
+		8ACCBEAA20DE43B7002C05EA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBEA920DE43B7002C05EA /* Colors.swift */; };
+		8ACCBEAC20DE44E1002C05EA /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBEAB20DE44E1002C05EA /* UIColor+hex.swift */; };
 		E266D2A04A69DEA9028CF983 /* Pods_EffehTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBC062D0740220237B2994E /* Pods_EffehTests.framework */; };
 		E2EDFD6DF68A142145CC5143 /* Pods_EffehUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4275E0C2B1A4C368DD4DF122 /* Pods_EffehUITests.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +99,16 @@
 		8A4A45D920DD17EC008E6E59 /* EffehBoard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EffehBoard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4A45DB20DD17EC008E6E59 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		8A4A45DD20DD17EC008E6E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ACCBE9320DD7E93002C05EA /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
+		8ACCBE9620DD8050002C05EA /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		8ACCBE9820DD8063002C05EA /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		8ACCBE9B20DD8F52002C05EA /* ImageReel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageReel.xib; sourceTree = "<group>"; };
+		8ACCBE9D20DD8F60002C05EA /* ImageReel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageReel.swift; sourceTree = "<group>"; };
+		8ACCBEA020DE2F6A002C05EA /* TabsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabsView.xib; sourceTree = "<group>"; };
+		8ACCBEA220DE2F76002C05EA /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		8ACCBEA620DE3BCE002C05EA /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		8ACCBEA920DE43B7002C05EA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8ACCBEAB20DE44E1002C05EA /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 		A1990A0741DEF9B59E891F97 /* Pods-EffehTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffehTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EffehTests/Pods-EffehTests.release.xcconfig"; sourceTree = "<group>"; };
 		BBF0EB509CBA2B3CBAFDC209 /* Pods_Effeh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Effeh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBC062D0740220237B2994E /* Pods_EffehTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EffehTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +177,8 @@
 		8A4A45A620DD172D008E6E59 /* Effeh */ = {
 			isa = PBXGroup;
 			children = (
+				8ACCBEA820DE439D002C05EA /* Resources */,
+				8ACCBE9220DD7E72002C05EA /* Views */,
 				8A4A45A720DD172D008E6E59 /* AppDelegate.swift */,
 				8A4A45A920DD172D008E6E59 /* ViewController.swift */,
 				8A4A45AB20DD172D008E6E59 /* Main.storyboard */,
@@ -189,6 +214,54 @@
 				8A4A45DD20DD17EC008E6E59 /* Info.plist */,
 			);
 			path = EffehBoard;
+			sourceTree = "<group>";
+		};
+		8ACCBE9220DD7E72002C05EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8ACCBE9A20DD8EFF002C05EA /* ImageReel */,
+				8ACCBE9520DD8000002C05EA /* Keyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8ACCBE9520DD8000002C05EA /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8ACCBE9320DD7E93002C05EA /* KeyboardButton.swift */,
+				8ACCBE9620DD8050002C05EA /* KeyboardView.xib */,
+				8ACCBE9820DD8063002C05EA /* KeyboardView.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		8ACCBE9A20DD8EFF002C05EA /* ImageReel */ = {
+			isa = PBXGroup;
+			children = (
+				8ACCBE9F20DE2F56002C05EA /* TabsView */,
+				8ACCBE9B20DD8F52002C05EA /* ImageReel.xib */,
+				8ACCBE9D20DD8F60002C05EA /* ImageReel.swift */,
+			);
+			path = ImageReel;
+			sourceTree = "<group>";
+		};
+		8ACCBE9F20DE2F56002C05EA /* TabsView */ = {
+			isa = PBXGroup;
+			children = (
+				8ACCBEA620DE3BCE002C05EA /* TabItem.swift */,
+				8ACCBEA020DE2F6A002C05EA /* TabsView.xib */,
+				8ACCBEA220DE2F76002C05EA /* TabsView.swift */,
+			);
+			path = TabsView;
+			sourceTree = "<group>";
+		};
+		8ACCBEA820DE439D002C05EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8ACCBEA920DE43B7002C05EA /* Colors.swift */,
+				8ACCBEAB20DE44E1002C05EA /* UIColor+hex.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A6EA0FCDC15E9C3074F1C814 /* Frameworks */ = {
@@ -349,7 +422,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ACCBEA120DE2F6A002C05EA /* TabsView.xib in Resources */,
+				8ACCBE9C20DD8F52002C05EA /* ImageReel.xib in Resources */,
 				8A4A45B220DD172E008E6E59 /* LaunchScreen.storyboard in Resources */,
+				8ACCBE9720DD8050002C05EA /* KeyboardView.xib in Resources */,
 				8A4A45AF20DD172E008E6E59 /* Assets.xcassets in Resources */,
 				8A4A45AD20DD172D008E6E59 /* Main.storyboard in Resources */,
 			);
@@ -373,6 +449,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ACCBEA420DE3551002C05EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +571,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ACCBEA320DE2F76002C05EA /* TabsView.swift in Sources */,
+				8ACCBE9420DD7E93002C05EA /* KeyboardButton.swift in Sources */,
+				8ACCBE9920DD8063002C05EA /* KeyboardView.swift in Sources */,
+				8ACCBEA720DE3BCE002C05EA /* TabItem.swift in Sources */,
 				8A4A45AA20DD172D008E6E59 /* ViewController.swift in Sources */,
+				8ACCBEAA20DE43B7002C05EA /* Colors.swift in Sources */,
+				8ACCBEAC20DE44E1002C05EA /* UIColor+hex.swift in Sources */,
+				8ACCBE9E20DD8F60002C05EA /* ImageReel.swift in Sources */,
 				8A4A45A820DD172D008E6E59 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,7 +603,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A85F9C420DE4A2600FBEC78 /* UIColor+hex.swift in Sources */,
 				8A4A45DC20DD17EC008E6E59 /* KeyboardViewController.swift in Sources */,
+				8A85F9C320DE4A2400FBEC78 /* Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,7 +773,10 @@
 				DEVELOPMENT_TEAM = 855NGKW9YC;
 				INFOPLIST_FILE = Effeh/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.Effeh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -705,7 +794,10 @@
 				DEVELOPMENT_TEAM = 855NGKW9YC;
 				INFOPLIST_FILE = Effeh/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.Effeh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -722,7 +814,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 855NGKW9YC;
 				INFOPLIST_FILE = EffehTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.EffehTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -740,7 +836,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 855NGKW9YC;
 				INFOPLIST_FILE = EffehTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.EffehTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -757,7 +857,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 855NGKW9YC;
 				INFOPLIST_FILE = EffehUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.EffehUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -774,7 +878,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 855NGKW9YC;
 				INFOPLIST_FILE = EffehUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.EffehUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -790,12 +898,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 855NGKW9YC;
 				INFOPLIST_FILE = EffehBoard/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.Effeh.EffehBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -806,12 +919,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 855NGKW9YC;
 				INFOPLIST_FILE = EffehBoard/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mikeattia.Effeh.EffehBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

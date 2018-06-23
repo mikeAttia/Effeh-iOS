@@ -20,6 +20,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBOutlet weak var icon: TabItem!
+    
+    @IBAction func changeColor(_ sender: Any) {
+        icon.isSelected = !icon.isSelected
+    }
+    
+    
 }
 
