@@ -25,22 +25,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6ie-2f-vJ4">
-                    <rect key="frame" x="50" y="0.0" width="275" height="39"/>
+                    <rect key="frame" x="50" y="0.0" width="275" height="44"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHw-Lg-EBY" customClass="TabItem" customModule="Effeh" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="69" height="39"/>
+                            <rect key="frame" x="0.0" y="0.0" width="69" height="44"/>
                             <state key="normal" image="globe"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DN-Wq-FXf" customClass="TabItem" customModule="Effeh" customModuleProvider="target">
-                            <rect key="frame" x="69" y="0.0" width="68.5" height="39"/>
+                            <rect key="frame" x="69" y="0.0" width="68.5" height="44"/>
                             <state key="normal" image="search"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emp-0z-RKR" customClass="TabItem" customModule="Effeh" customModuleProvider="target">
-                            <rect key="frame" x="137.5" y="0.0" width="69" height="39"/>
+                            <rect key="frame" x="137.5" y="0.0" width="69" height="44"/>
                             <state key="normal" image="favorite"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOF-6J-Slt" customClass="TabItem" customModule="Effeh" customModuleProvider="target">
-                            <rect key="frame" x="206.5" y="0.0" width="68.5" height="39"/>
+                            <rect key="frame" x="206.5" y="0.0" width="68.5" height="44"/>
                             <state key="normal" image="history"/>
                         </button>
                     </subviews>
@@ -51,7 +51,7 @@
                 <constraint firstItem="6ie-2f-vJ4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="SEp-Ab-VwE"/>
                 <constraint firstItem="6ie-2f-vJ4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="TzI-YD-9GP"/>
                 <constraint firstItem="6ie-2f-vJ4" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="of4-Rb-Moq"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6ie-2f-vJ4" secondAttribute="bottom" constant="5" id="p8K-60-peG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="6ie-2f-vJ4" secondAttribute="bottom" id="p8K-60-peG"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

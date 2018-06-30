@@ -25,7 +25,12 @@ class ViewController: UIViewController {
     @IBAction func changeColor(_ sender: Any) {
         icon.isSelected = !icon.isSelected
     }
-    
+
+    @IBOutlet weak var testView: UIView!{
+        didSet{
+            testView.layer.cornerRadius = testView.frame.height / 2
+        }
+    }
     
 }
 
