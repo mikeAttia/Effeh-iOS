@@ -11,8 +11,8 @@ import UIKit
 class ImageReel: UIView {
 
     // MARK: - Constants
-    let nibFileName = String(describing: ImageReel.self)
-    let imageItemCellId = "Image_Item"
+    private let nibFileName = String(describing: ImageReel.self)
+    private let imageItemCellId = "Image_Item"
     
     // MARK: - View Outlets
     @IBOutlet var contentView: UIView!
@@ -62,5 +62,4 @@ extension ImageReel: UICollectionViewDataSource, UICollectionViewDelegate, UICol
         let width = height
         return CGSize(width: width, height: height)
     }
-    
 }

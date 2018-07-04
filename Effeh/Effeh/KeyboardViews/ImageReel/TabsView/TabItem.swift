@@ -34,6 +34,8 @@ class TabItem: UIButton {
     
     private func setupView(){
         self.setImage(self.imageView?.image?.withRenderingMode(.alwaysTemplate), for: .normal)
+        self.imageView?.contentMode = .scaleAspectFit
+        self.tintColor = Colors.unselectedTabIconTint
     }
 
 }

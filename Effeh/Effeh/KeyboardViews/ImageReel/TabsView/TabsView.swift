@@ -27,6 +27,7 @@ class TabsView: UIView {
     @IBOutlet private weak var searchTabItem: TabItem!{
         didSet{
             searchTabItem.addTarget(self, action: #selector(selectedItem(_:)), for: UIControlEvents.touchUpInside)
+            searchTabItem.isSelected = true
         }
     }
    

@@ -23,18 +23,21 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="33" translatesAutoresizingMaskIntoConstraints="NO" id="Cxb-ZF-xDy" customClass="TabsView" customModule="Effeh" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="190" width="375" height="44"/>
+                    <rect key="frame" x="0.0" y="207" width="375" height="27"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="M6k-Vf-TWJ"/>
+                        <constraint firstAttribute="height" constant="27" id="M6k-Vf-TWJ"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAv-1R-tUD">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="207"/>
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jC8-JQ-Ecr">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="207"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="207" id="217-hI-FmP"/>
+                            </constraints>
                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pel-1d-y9j">
                                 <size key="itemSize" width="50" height="50"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>

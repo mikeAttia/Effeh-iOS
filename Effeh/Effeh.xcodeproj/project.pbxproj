@@ -16,6 +16,13 @@
 		8A26021920E7A40800FCCE93 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBEA620DE3BCE002C05EA /* TabItem.swift */; };
 		8A26021A20E7A41D00FCCE93 /* ImageItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1F21420E2C9F1001D923F /* ImageItemCollectionViewCell.swift */; };
 		8A26021B20E7A41D00FCCE93 /* ImageItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AF1F21520E2C9F1001D923F /* ImageItemCollectionViewCell.xib */; };
+		8A2F377F20EBA09900B1925B /* KeyboardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F377E20EBA09900B1925B /* KeyboardLayout.swift */; };
+		8A2F378120EBA27C00B1925B /* KeyboardkeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F378020EBA27C00B1925B /* KeyboardkeyButton.swift */; };
+		8A2F378320EBA36B00B1925B /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F378220EBA36B00B1925B /* KeyboardView.swift */; };
+		8A3C8E5320ED29F9007E23A4 /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3C8E5220ED29F9007E23A4 /* TODO.swift */; };
+		8A3C8E5720ED31A8007E23A4 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F378220EBA36B00B1925B /* KeyboardView.swift */; };
+		8A3C8E5820ED31A8007E23A4 /* KeyboardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F377E20EBA09900B1925B /* KeyboardLayout.swift */; };
+		8A3C8E5920ED31A8007E23A4 /* KeyboardkeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2F378020EBA27C00B1925B /* KeyboardkeyButton.swift */; };
 		8A4A45A820DD172D008E6E59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A45A720DD172D008E6E59 /* AppDelegate.swift */; };
 		8A4A45AA20DD172D008E6E59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A45A920DD172D008E6E59 /* ViewController.swift */; };
 		8A4A45AD20DD172D008E6E59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4A45AB20DD172D008E6E59 /* Main.storyboard */; };
@@ -35,12 +42,10 @@
 		8A99B2BE20E3A02900CC2F43 /* TextEntryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A99B2B620E3994400CC2F43 /* TextEntryCollectionViewCell.xib */; };
 		8A99B2BF20E3A02C00CC2F43 /* KeywordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A99B2B920E3996200CC2F43 /* KeywordCollectionViewCell.swift */; };
 		8A99B2C020E3A02F00CC2F43 /* KeywordCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A99B2BA20E3996200CC2F43 /* KeywordCollectionViewCell.xib */; };
-		8ABFDCEF20E3893200DEF1BF /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9620DD8050002C05EA /* KeyboardView.xib */; };
-		8ABFDCF020E3893C00DEF1BF /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9320DD7E93002C05EA /* KeyboardButton.swift */; };
-		8ABFDCF120E3894000DEF1BF /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9820DD8063002C05EA /* KeyboardView.swift */; };
-		8ACCBE9420DD7E93002C05EA /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9320DD7E93002C05EA /* KeyboardButton.swift */; };
-		8ACCBE9720DD8050002C05EA /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9620DD8050002C05EA /* KeyboardView.xib */; };
-		8ACCBE9920DD8063002C05EA /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9820DD8063002C05EA /* KeyboardView.swift */; };
+		8ABFDCEF20E3893200DEF1BF /* KeyboardContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9620DD8050002C05EA /* KeyboardContainer.xib */; };
+		8ABFDCF120E3894000DEF1BF /* KeyboardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9820DD8063002C05EA /* KeyboardContainer.swift */; };
+		8ACCBE9720DD8050002C05EA /* KeyboardContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9620DD8050002C05EA /* KeyboardContainer.xib */; };
+		8ACCBE9920DD8063002C05EA /* KeyboardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9820DD8063002C05EA /* KeyboardContainer.swift */; };
 		8ACCBE9C20DD8F52002C05EA /* ImageReel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9B20DD8F52002C05EA /* ImageReel.xib */; };
 		8ACCBE9E20DD8F60002C05EA /* ImageReel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBE9D20DD8F60002C05EA /* ImageReel.swift */; };
 		8ACCBEA120DE2F6A002C05EA /* TabsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ACCBEA020DE2F6A002C05EA /* TabsView.xib */; };
@@ -103,6 +108,10 @@
 		4275E0C2B1A4C368DD4DF122 /* Pods_EffehUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EffehUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFDB7327DC4D87A60236069 /* Pods-EffehTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffehTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EffehTests/Pods-EffehTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7F1330DE19D59371EA0FC8AF /* Pods_EffehBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EffehBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A2F377E20EBA09900B1925B /* KeyboardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayout.swift; sourceTree = "<group>"; };
+		8A2F378020EBA27C00B1925B /* KeyboardkeyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardkeyButton.swift; sourceTree = "<group>"; };
+		8A2F378220EBA36B00B1925B /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		8A3C8E5220ED29F9007E23A4 /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
 		8A4A45A420DD172D008E6E59 /* Effeh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Effeh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4A45A720DD172D008E6E59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A4A45A920DD172D008E6E59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,9 +132,8 @@
 		8A99B2B620E3994400CC2F43 /* TextEntryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextEntryCollectionViewCell.xib; sourceTree = "<group>"; };
 		8A99B2B920E3996200CC2F43 /* KeywordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A99B2BA20E3996200CC2F43 /* KeywordCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeywordCollectionViewCell.xib; sourceTree = "<group>"; };
-		8ACCBE9320DD7E93002C05EA /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
-		8ACCBE9620DD8050002C05EA /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
-		8ACCBE9820DD8063002C05EA /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		8ACCBE9620DD8050002C05EA /* KeyboardContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardContainer.xib; sourceTree = "<group>"; };
+		8ACCBE9820DD8063002C05EA /* KeyboardContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardContainer.swift; sourceTree = "<group>"; };
 		8ACCBE9B20DD8F52002C05EA /* ImageReel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageReel.xib; sourceTree = "<group>"; };
 		8ACCBE9D20DD8F60002C05EA /* ImageReel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageReel.swift; sourceTree = "<group>"; };
 		8ACCBEA020DE2F6A002C05EA /* TabsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabsView.xib; sourceTree = "<group>"; };
@@ -176,9 +184,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A3C8E5420ED2D82007E23A4 /* KeyboardViews */ = {
+			isa = PBXGroup;
+			children = (
+				8A3C8E5520ED3085007E23A4 /* KeyboardContainer */,
+				8ACCBE9A20DD8EFF002C05EA /* ImageReel */,
+				8A3C8E5620ED310C007E23A4 /* KeyboardView */,
+			);
+			path = KeyboardViews;
+			sourceTree = "<group>";
+		};
+		8A3C8E5520ED3085007E23A4 /* KeyboardContainer */ = {
+			isa = PBXGroup;
+			children = (
+				8A99B2B420E3991700CC2F43 /* TextFieldItems */,
+				8ACCBE9620DD8050002C05EA /* KeyboardContainer.xib */,
+				8ACCBE9820DD8063002C05EA /* KeyboardContainer.swift */,
+			);
+			path = KeyboardContainer;
+			sourceTree = "<group>";
+		};
+		8A3C8E5620ED310C007E23A4 /* KeyboardView */ = {
+			isa = PBXGroup;
+			children = (
+				8A2F377E20EBA09900B1925B /* KeyboardLayout.swift */,
+				8A2F378020EBA27C00B1925B /* KeyboardkeyButton.swift */,
+				8A2F378220EBA36B00B1925B /* KeyboardView.swift */,
+			);
+			path = KeyboardView;
+			sourceTree = "<group>";
+		};
 		8A4A459B20DD172C008E6E59 = {
 			isa = PBXGroup;
 			children = (
+				8A3C8E5220ED29F9007E23A4 /* TODO.swift */,
 				8A4A45A620DD172D008E6E59 /* Effeh */,
 				8A4A45DA20DD17EC008E6E59 /* EffehBoard */,
 				8A4A45BB20DD172E008E6E59 /* EffehTests */,
@@ -203,8 +242,8 @@
 		8A4A45A620DD172D008E6E59 /* Effeh */ = {
 			isa = PBXGroup;
 			children = (
+				8A3C8E5420ED2D82007E23A4 /* KeyboardViews */,
 				8ACCBEA820DE439D002C05EA /* Resources */,
-				8ACCBE9220DD7E72002C05EA /* Views */,
 				8A4A45A720DD172D008E6E59 /* AppDelegate.swift */,
 				8A4A45A920DD172D008E6E59 /* ViewController.swift */,
 				8A4A45AB20DD172D008E6E59 /* Main.storyboard */,
@@ -251,26 +290,6 @@
 				8A99B2BA20E3996200CC2F43 /* KeywordCollectionViewCell.xib */,
 			);
 			path = TextFieldItems;
-			sourceTree = "<group>";
-		};
-		8ACCBE9220DD7E72002C05EA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				8ACCBE9A20DD8EFF002C05EA /* ImageReel */,
-				8ACCBE9520DD8000002C05EA /* Keyboard */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		8ACCBE9520DD8000002C05EA /* Keyboard */ = {
-			isa = PBXGroup;
-			children = (
-				8A99B2B420E3991700CC2F43 /* TextFieldItems */,
-				8ACCBE9320DD7E93002C05EA /* KeyboardButton.swift */,
-				8ACCBE9620DD8050002C05EA /* KeyboardView.xib */,
-				8ACCBE9820DD8063002C05EA /* KeyboardView.swift */,
-			);
-			path = Keyboard;
 			sourceTree = "<group>";
 		};
 		8ACCBE9A20DD8EFF002C05EA /* ImageReel */ = {
@@ -475,7 +494,7 @@
 				8AF1F21720E2C9F1001D923F /* ImageItemCollectionViewCell.xib in Resources */,
 				8A99B2B820E3994400CC2F43 /* TextEntryCollectionViewCell.xib in Resources */,
 				8A4A45B220DD172E008E6E59 /* LaunchScreen.storyboard in Resources */,
-				8ACCBE9720DD8050002C05EA /* KeyboardView.xib in Resources */,
+				8ACCBE9720DD8050002C05EA /* KeyboardContainer.xib in Resources */,
 				8A4A45AF20DD172E008E6E59 /* Assets.xcassets in Resources */,
 				8A4A45AD20DD172D008E6E59 /* Main.storyboard in Resources */,
 				8A99B2BC20E3996200CC2F43 /* KeywordCollectionViewCell.xib in Resources */,
@@ -504,7 +523,7 @@
 				8A26021620E7A3AF00FCCE93 /* ImageReel.xib in Resources */,
 				8A26021B20E7A41D00FCCE93 /* ImageItemCollectionViewCell.xib in Resources */,
 				8ACCBEA420DE3551002C05EA /* Assets.xcassets in Resources */,
-				8ABFDCEF20E3893200DEF1BF /* KeyboardView.xib in Resources */,
+				8ABFDCEF20E3893200DEF1BF /* KeyboardContainer.xib in Resources */,
 				8A99B2C020E3A02F00CC2F43 /* KeywordCollectionViewCell.xib in Resources */,
 				8A99B2BE20E3A02900CC2F43 /* TextEntryCollectionViewCell.xib in Resources */,
 			);
@@ -631,15 +650,18 @@
 				8ACCBEA320DE2F76002C05EA /* TabsView.swift in Sources */,
 				8AF1F21620E2C9F1001D923F /* ImageItemCollectionViewCell.swift in Sources */,
 				8A99B2BB20E3996200CC2F43 /* KeywordCollectionViewCell.swift in Sources */,
-				8ACCBE9420DD7E93002C05EA /* KeyboardButton.swift in Sources */,
-				8ACCBE9920DD8063002C05EA /* KeyboardView.swift in Sources */,
+				8ACCBE9920DD8063002C05EA /* KeyboardContainer.swift in Sources */,
+				8A2F378320EBA36B00B1925B /* KeyboardView.swift in Sources */,
+				8A3C8E5320ED29F9007E23A4 /* TODO.swift in Sources */,
 				8ACCBEA720DE3BCE002C05EA /* TabItem.swift in Sources */,
+				8A2F378120EBA27C00B1925B /* KeyboardkeyButton.swift in Sources */,
 				8A4A45AA20DD172D008E6E59 /* ViewController.swift in Sources */,
 				8ACCBEAA20DE43B7002C05EA /* Colors.swift in Sources */,
 				8ACCBEAC20DE44E1002C05EA /* UIColor+hex.swift in Sources */,
 				8A99B2B720E3994400CC2F43 /* TextEntryCollectionViewCell.swift in Sources */,
 				8ACCBE9E20DD8F60002C05EA /* ImageReel.swift in Sources */,
 				8A4A45A820DD172D008E6E59 /* AppDelegate.swift in Sources */,
+				8A2F377F20EBA09900B1925B /* KeyboardLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,12 +685,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ABFDCF020E3893C00DEF1BF /* KeyboardButton.swift in Sources */,
 				8A99B2BF20E3A02C00CC2F43 /* KeywordCollectionViewCell.swift in Sources */,
 				8A85F9C420DE4A2600FBEC78 /* UIColor+hex.swift in Sources */,
 				8A4A45DC20DD17EC008E6E59 /* KeyboardViewController.swift in Sources */,
-				8ABFDCF120E3894000DEF1BF /* KeyboardView.swift in Sources */,
+				8A3C8E5920ED31A8007E23A4 /* KeyboardkeyButton.swift in Sources */,
+				8ABFDCF120E3894000DEF1BF /* KeyboardContainer.swift in Sources */,
+				8A3C8E5720ED31A8007E23A4 /* KeyboardView.swift in Sources */,
 				8A26021520E7A3A800FCCE93 /* ImageReel.swift in Sources */,
+				8A3C8E5820ED31A8007E23A4 /* KeyboardLayout.swift in Sources */,
 				8A26021720E7A40000FCCE93 /* TabsView.swift in Sources */,
 				8A99B2BD20E3A02300CC2F43 /* TextEntryCollectionViewCell.swift in Sources */,
 				8A26021920E7A40800FCCE93 /* TabItem.swift in Sources */,

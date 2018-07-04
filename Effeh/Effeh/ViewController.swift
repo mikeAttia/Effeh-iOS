@@ -9,28 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var v: KeyboardContainer?
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        v = KeyboardContainer(frame: self.view!.frame)
+        self.view.addSubview(v!)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    @IBOutlet weak var icon: TabItem!
-    
-    @IBAction func changeColor(_ sender: Any) {
-        icon.isSelected = !icon.isSelected
-    }
-
-    @IBOutlet weak var testView: UIView!{
-        didSet{
-            testView.layer.cornerRadius = testView.frame.height / 2
-        }
-    }
-    
 }
 
