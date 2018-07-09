@@ -35,6 +35,8 @@ class KeyboardView: UIView {
         view.dataSource = self
         let searchItemNib = UINib(nibName: String(describing: KeywordCollectionViewCell.self), bundle: nil)
         view.register(searchItemNib, forCellWithReuseIdentifier: searchItemCellId)
+        view.backgroundColor = .white
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     let keyboardKeysContainer = UIView()
@@ -65,13 +67,16 @@ class KeyboardView: UIView {
     private func addSubViewsWithConstraints(){
         self.addSubview(keywordsView)
         self.addSubview(keyboardKeysContainer)
+        translatesAutoresizingMaskIntoConstraints = false
         // KeywordsView constraints
+        keywordsView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint(item: keywordsView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: keywordsView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: keywordsView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: keywordsView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: KeywordsViewHeight).isActive = true
         
         // Keyboards Container constraints
+        keyboardKeysContainer.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint(item: keyboardKeysContainer, attribute: .top, relatedBy: .equal, toItem: keywordsView, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: keyboardKeysContainer, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: keyboardKeysContainer, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 0).isActive = true

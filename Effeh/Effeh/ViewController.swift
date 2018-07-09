@@ -10,11 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var v: KeyboardContainer?
+    @IBOutlet weak var container: UIView!
+    var kb: KeyboardContainer?
     
     override func viewDidLoad() {
-        v = KeyboardContainer(frame: self.view!.frame)
-        self.view.addSubview(v!)
+        super.viewDidLoad()
+        kb = KeyboardContainer(frame: container.bounds)
+        container.addSubview(kb!)
+        kb!.pinEdgesTo(container)
+    }
+    
+    @IBAction func isIt(_ sender: Any) {
+        kb?.isStillExist()
     }
 }
 

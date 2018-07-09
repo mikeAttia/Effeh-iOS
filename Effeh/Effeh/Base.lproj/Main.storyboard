@@ -17,9 +17,31 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="215" translatesAutoresizingMaskIntoConstraints="NO" id="ZhC-th-teV">
+                                <rect key="frame" x="0.0" y="250" width="375" height="215"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIR-3j-kUZ">
+                                <rect key="frame" x="155" y="152" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Is it there"/>
+                                <connections>
+                                    <action selector="isIt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ycz-5I-cAM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.61176470589999998" green="0.1647058824" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZhC-th-teV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" id="E0P-e0-QCQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZhC-th-teV" secondAttribute="trailing" id="cah-Qp-k3F"/>
+                            <constraint firstItem="ZhC-th-teV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uh8-AK-Fj0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="container" destination="ZhC-th-teV" id="Afa-gi-V9R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,6 +10,7 @@ import UIKit
 
 class KeyboardContainer: UIView {
     
+    @IBOutlet var imgReel: ImageReel!
     // MARK: - Constants
     private let nibFileName = String(describing: KeyboardContainer.self)
     private let editFieldCellId = "Edit_Field"
@@ -37,6 +38,7 @@ class KeyboardContainer: UIView {
         }
     }
     
+    var keyboard: KeyboardContainer?
     
     // MARK: - Initialization
     override init(frame: CGRect) {
@@ -54,8 +56,38 @@ class KeyboardContainer: UIView {
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    var laidOut = false
+    var kb: KeyboardView?
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        if !laidOut{
+            imgReel.removeFromSuperview()
+            kb = KeyboardView(frame: contentContainer.bounds)
+            contentContainer.addSubview(kb!)
+            kb?.pinEdgesTo(contentContainer)
+            laidOut = !laidOut
+        }
+    }
+    var viewingKB = true
+    func isStillExist(){
+        if viewingKB{
+            kb?.removeFromSuperview()
+            contentContainer.addSubview(imgReel)
+            imgReel.pinEdgesTo(contentContainer)
+        }else{
+            imgReel.removeFromSuperview()
+            contentContainer.addSubview(kb!)
+            kb?.pinEdgesTo(contentContainer)
+        }
+        viewingKB = !viewingKB
     }
 }
+
+
 //
 //let items = ["ايام سوده","عندها","من انتم","مش فاكرك ياض", "حاجه تانيه"]
 
@@ -64,10 +96,13 @@ class KeyboardContainer: UIView {
 extension KeyboardContainer: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: editFieldCellId, for: indexPath) as! TextEntryCollectionViewCell
+        cell.textField.placeholder = "دور بالافيه"
+        cell.setupCell(width: collectionView.frame.width * 0.66, height: collectionView.frame.height)
+        return cell
     }
 }

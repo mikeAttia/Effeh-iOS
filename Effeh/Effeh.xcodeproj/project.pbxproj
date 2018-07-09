@@ -54,6 +54,8 @@
 		8ACCBEA720DE3BCE002C05EA /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBEA620DE3BCE002C05EA /* TabItem.swift */; };
 		8ACCBEAA20DE43B7002C05EA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBEA920DE43B7002C05EA /* Colors.swift */; };
 		8ACCBEAC20DE44E1002C05EA /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBEAB20DE44E1002C05EA /* UIColor+hex.swift */; };
+		8AE8A15620EE4766003D074B /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8A15520EE4766003D074B /* UIView+Constraints.swift */; };
+		8AE8A15720EE4775003D074B /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE8A15520EE4766003D074B /* UIView+Constraints.swift */; };
 		8AF1F21620E2C9F1001D923F /* ImageItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1F21420E2C9F1001D923F /* ImageItemCollectionViewCell.swift */; };
 		8AF1F21720E2C9F1001D923F /* ImageItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AF1F21520E2C9F1001D923F /* ImageItemCollectionViewCell.xib */; };
 		E266D2A04A69DEA9028CF983 /* Pods_EffehTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBC062D0740220237B2994E /* Pods_EffehTests.framework */; };
@@ -141,6 +143,7 @@
 		8ACCBEA620DE3BCE002C05EA /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 		8ACCBEA920DE43B7002C05EA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8ACCBEAB20DE44E1002C05EA /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		8AE8A15520EE4766003D074B /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
 		8AF1F21420E2C9F1001D923F /* ImageItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		8AF1F21520E2C9F1001D923F /* ImageItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1990A0741DEF9B59E891F97 /* Pods-EffehTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffehTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EffehTests/Pods-EffehTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -242,6 +245,8 @@
 		8A4A45A620DD172D008E6E59 /* Effeh */ = {
 			isa = PBXGroup;
 			children = (
+				8A5C15D420F2EAA0006817A1 /* Firebase */,
+				8AE8A15420EE4758003D074B /* Helpers */,
 				8A3C8E5420ED2D82007E23A4 /* KeyboardViews */,
 				8ACCBEA820DE439D002C05EA /* Resources */,
 				8A4A45A720DD172D008E6E59 /* AppDelegate.swift */,
@@ -279,6 +284,13 @@
 				8A4A45DD20DD17EC008E6E59 /* Info.plist */,
 			);
 			path = EffehBoard;
+			sourceTree = "<group>";
+		};
+		8A5C15D420F2EAA0006817A1 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		8A99B2B420E3991700CC2F43 /* TextFieldItems */ = {
@@ -320,6 +332,14 @@
 				8ACCBEAB20DE44E1002C05EA /* UIColor+hex.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8AE8A15420EE4758003D074B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8AE8A15520EE4766003D074B /* UIView+Constraints.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		8AF1F21320E2C9BF001D923F /* ImageItem */ = {
@@ -662,6 +682,7 @@
 				8ACCBE9E20DD8F60002C05EA /* ImageReel.swift in Sources */,
 				8A4A45A820DD172D008E6E59 /* AppDelegate.swift in Sources */,
 				8A2F377F20EBA09900B1925B /* KeyboardLayout.swift in Sources */,
+				8AE8A15620EE4766003D074B /* UIView+Constraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -688,6 +709,7 @@
 				8A99B2BF20E3A02C00CC2F43 /* KeywordCollectionViewCell.swift in Sources */,
 				8A85F9C420DE4A2600FBEC78 /* UIColor+hex.swift in Sources */,
 				8A4A45DC20DD17EC008E6E59 /* KeyboardViewController.swift in Sources */,
+				8AE8A15720EE4775003D074B /* UIView+Constraints.swift in Sources */,
 				8A3C8E5920ED31A8007E23A4 /* KeyboardkeyButton.swift in Sources */,
 				8ABFDCF120E3894000DEF1BF /* KeyboardContainer.swift in Sources */,
 				8A3C8E5720ED31A8007E23A4 /* KeyboardView.swift in Sources */,
