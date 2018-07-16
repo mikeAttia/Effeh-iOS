@@ -15,7 +15,7 @@ typealias JSON = [String: AnyObject]
 
 class DataStore{
     
-    private var firebaseStoreRef = Database.database().reference()
+    private var firebaseStoreRef: DatabaseReference!
     private var keywordsList: [Keyword] = []
     
     func initialize(){
@@ -35,6 +35,7 @@ class DataStore{
         }
         
         // Fetch keywords list
+        firebaseStoreRef = Database.database().reference()
         fetchListOfKeywords()
     }
     

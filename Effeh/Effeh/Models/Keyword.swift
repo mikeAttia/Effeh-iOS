@@ -15,8 +15,16 @@ struct Keyword {
     var memeIds: [String] = []
     
     static func keywordsListFrom(_ json: NSDictionary?) -> [Keyword]{
-        //TODO: Parse Dictionary into list of Keyword objects
-        return []
+        guard let dict = json, let json = dict as? [String: Any] else {return []}
+        var keywordsList: [Keyword] = []
+        for key in json.keys{
+            if let obj = json[key] as? [String: Any]{
+                let word = obj["keyword"] as! String
+                let memeIds = obj["memes"] as! [String]
+                keywordsList.append(Keyword(word: word, id: key, memeIds: memeIds))
+            }
+        }
+        return keywordsList
     }
     
 }

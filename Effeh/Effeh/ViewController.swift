@@ -11,17 +11,19 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var container: UIView!
-    var kb: KeyboardContainer?
+    var store = DataStore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        kb = KeyboardContainer(frame: container.bounds)
-        container.addSubview(kb!)
-        kb!.pinEdgesTo(container)
+        store.initialize()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        store.getKeywordsContaining("sam")
     }
     
     @IBAction func isIt(_ sender: Any) {
-        kb?.isStillExist()
     }
 }
 
