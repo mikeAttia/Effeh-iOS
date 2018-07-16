@@ -32,8 +32,16 @@
 		8A4A45C820DD172E008E6E59 /* EffehUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A45C720DD172E008E6E59 /* EffehUITests.swift */; };
 		8A4A45DC20DD17EC008E6E59 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A45DB20DD17EC008E6E59 /* KeyboardViewController.swift */; };
 		8A4A45E020DD17EC008E6E59 /* EffehBoard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A4A45D920DD17EC008E6E59 /* EffehBoard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8A5C15D620F2EC64006817A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A5C15D520F2EC63006817A1 /* GoogleService-Info.plist */; };
+		8A5C15D820F2EDF7006817A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A5C15D720F2EDF7006817A1 /* GoogleService-Info.plist */; };
 		8A85F9C320DE4A2400FBEC78 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBEA920DE43B7002C05EA /* Colors.swift */; };
 		8A85F9C420DE4A2600FBEC78 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBEAB20DE44E1002C05EA /* UIColor+hex.swift */; };
+		8A98025020F73E400033D654 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A98024F20F73E400033D654 /* DataStore.swift */; };
+		8A98025120F73E4F0033D654 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A98024F20F73E400033D654 /* DataStore.swift */; };
+		8A98025420F7438C0033D654 /* Keyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A98025320F7438C0033D654 /* Keyword.swift */; };
+		8A98025520F743FB0033D654 /* Keyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A98025320F7438C0033D654 /* Keyword.swift */; };
+		8A98025720F744040033D654 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A98025620F744040033D654 /* Meme.swift */; };
+		8A98025820F744090033D654 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A98025620F744040033D654 /* Meme.swift */; };
 		8A99B2B720E3994400CC2F43 /* TextEntryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A99B2B520E3994400CC2F43 /* TextEntryCollectionViewCell.swift */; };
 		8A99B2B820E3994400CC2F43 /* TextEntryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A99B2B620E3994400CC2F43 /* TextEntryCollectionViewCell.xib */; };
 		8A99B2BB20E3996200CC2F43 /* KeywordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A99B2B920E3996200CC2F43 /* KeywordCollectionViewCell.swift */; };
@@ -130,6 +138,11 @@
 		8A4A45D920DD17EC008E6E59 /* EffehBoard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = EffehBoard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A4A45DB20DD17EC008E6E59 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		8A4A45DD20DD17EC008E6E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A5C15D520F2EC63006817A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A5C15D720F2EDF7006817A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A98024F20F73E400033D654 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		8A98025320F7438C0033D654 /* Keyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyword.swift; sourceTree = "<group>"; };
+		8A98025620F744040033D654 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		8A99B2B520E3994400CC2F43 /* TextEntryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEntryCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A99B2B620E3994400CC2F43 /* TextEntryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextEntryCollectionViewCell.xib; sourceTree = "<group>"; };
 		8A99B2B920E3996200CC2F43 /* KeywordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -245,7 +258,9 @@
 		8A4A45A620DD172D008E6E59 /* Effeh */ = {
 			isa = PBXGroup;
 			children = (
-				8A5C15D420F2EAA0006817A1 /* Firebase */,
+				8A5C15D520F2EC63006817A1 /* GoogleService-Info.plist */,
+				8A98025220F7437D0033D654 /* Models */,
+				8A5C15D420F2EAA0006817A1 /* DataRetriever */,
 				8AE8A15420EE4758003D074B /* Helpers */,
 				8A3C8E5420ED2D82007E23A4 /* KeyboardViews */,
 				8ACCBEA820DE439D002C05EA /* Resources */,
@@ -280,17 +295,28 @@
 		8A4A45DA20DD17EC008E6E59 /* EffehBoard */ = {
 			isa = PBXGroup;
 			children = (
+				8A5C15D720F2EDF7006817A1 /* GoogleService-Info.plist */,
 				8A4A45DB20DD17EC008E6E59 /* KeyboardViewController.swift */,
 				8A4A45DD20DD17EC008E6E59 /* Info.plist */,
 			);
 			path = EffehBoard;
 			sourceTree = "<group>";
 		};
-		8A5C15D420F2EAA0006817A1 /* Firebase */ = {
+		8A5C15D420F2EAA0006817A1 /* DataRetriever */ = {
 			isa = PBXGroup;
 			children = (
+				8A98024F20F73E400033D654 /* DataStore.swift */,
 			);
-			path = Firebase;
+			path = DataRetriever;
+			sourceTree = "<group>";
+		};
+		8A98025220F7437D0033D654 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A98025320F7438C0033D654 /* Keyword.swift */,
+				8A98025620F744040033D654 /* Meme.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8A99B2B420E3991700CC2F43 /* TextFieldItems */ = {
@@ -516,6 +542,7 @@
 				8A4A45B220DD172E008E6E59 /* LaunchScreen.storyboard in Resources */,
 				8ACCBE9720DD8050002C05EA /* KeyboardContainer.xib in Resources */,
 				8A4A45AF20DD172E008E6E59 /* Assets.xcassets in Resources */,
+				8A5C15D620F2EC64006817A1 /* GoogleService-Info.plist in Resources */,
 				8A4A45AD20DD172D008E6E59 /* Main.storyboard in Resources */,
 				8A99B2BC20E3996200CC2F43 /* KeywordCollectionViewCell.xib in Resources */,
 			);
@@ -540,6 +567,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A26021820E7A40500FCCE93 /* TabsView.xib in Resources */,
+				8A5C15D820F2EDF7006817A1 /* GoogleService-Info.plist in Resources */,
 				8A26021620E7A3AF00FCCE93 /* ImageReel.xib in Resources */,
 				8A26021B20E7A41D00FCCE93 /* ImageItemCollectionViewCell.xib in Resources */,
 				8ACCBEA420DE3551002C05EA /* Assets.xcassets in Resources */,
@@ -559,27 +587,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Effeh/Pods-Effeh-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -668,14 +684,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ACCBEA320DE2F76002C05EA /* TabsView.swift in Sources */,
+				8A98025020F73E400033D654 /* DataStore.swift in Sources */,
 				8AF1F21620E2C9F1001D923F /* ImageItemCollectionViewCell.swift in Sources */,
 				8A99B2BB20E3996200CC2F43 /* KeywordCollectionViewCell.swift in Sources */,
 				8ACCBE9920DD8063002C05EA /* KeyboardContainer.swift in Sources */,
 				8A2F378320EBA36B00B1925B /* KeyboardView.swift in Sources */,
 				8A3C8E5320ED29F9007E23A4 /* TODO.swift in Sources */,
+				8A98025420F7438C0033D654 /* Keyword.swift in Sources */,
 				8ACCBEA720DE3BCE002C05EA /* TabItem.swift in Sources */,
 				8A2F378120EBA27C00B1925B /* KeyboardkeyButton.swift in Sources */,
 				8A4A45AA20DD172D008E6E59 /* ViewController.swift in Sources */,
+				8A98025720F744040033D654 /* Meme.swift in Sources */,
 				8ACCBEAA20DE43B7002C05EA /* Colors.swift in Sources */,
 				8ACCBEAC20DE44E1002C05EA /* UIColor+hex.swift in Sources */,
 				8A99B2B720E3994400CC2F43 /* TextEntryCollectionViewCell.swift in Sources */,
@@ -708,6 +727,7 @@
 			files = (
 				8A99B2BF20E3A02C00CC2F43 /* KeywordCollectionViewCell.swift in Sources */,
 				8A85F9C420DE4A2600FBEC78 /* UIColor+hex.swift in Sources */,
+				8A98025820F744090033D654 /* Meme.swift in Sources */,
 				8A4A45DC20DD17EC008E6E59 /* KeyboardViewController.swift in Sources */,
 				8AE8A15720EE4775003D074B /* UIView+Constraints.swift in Sources */,
 				8A3C8E5920ED31A8007E23A4 /* KeyboardkeyButton.swift in Sources */,
@@ -715,9 +735,11 @@
 				8A3C8E5720ED31A8007E23A4 /* KeyboardView.swift in Sources */,
 				8A26021520E7A3A800FCCE93 /* ImageReel.swift in Sources */,
 				8A3C8E5820ED31A8007E23A4 /* KeyboardLayout.swift in Sources */,
+				8A98025120F73E4F0033D654 /* DataStore.swift in Sources */,
 				8A26021720E7A40000FCCE93 /* TabsView.swift in Sources */,
 				8A99B2BD20E3A02300CC2F43 /* TextEntryCollectionViewCell.swift in Sources */,
 				8A26021920E7A40800FCCE93 /* TabItem.swift in Sources */,
+				8A98025520F743FB0033D654 /* Keyword.swift in Sources */,
 				8A85F9C320DE4A2400FBEC78 /* Colors.swift in Sources */,
 				8A26021A20E7A41D00FCCE93 /* ImageItemCollectionViewCell.swift in Sources */,
 			);

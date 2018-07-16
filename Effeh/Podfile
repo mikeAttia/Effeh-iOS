@@ -6,7 +6,7 @@ def app_pods
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
-  pod 'Firebase/Firestore'
+  pod 'Firebase/Database'
 end
 
 target 'Effeh' do
