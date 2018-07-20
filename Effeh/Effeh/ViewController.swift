@@ -20,10 +20,10 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        store.getKeywordsContaining("sam")
+        let cont = KeyboardContainer(frame: container.bounds)
+        container.addSubview(cont)
+        cont.pinEdgesTo(container)
     }
-    
-    @IBAction func isIt(_ sender: Any) {
-    }
+
 }
 

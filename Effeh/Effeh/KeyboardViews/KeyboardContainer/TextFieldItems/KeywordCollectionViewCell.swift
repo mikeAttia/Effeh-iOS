@@ -14,6 +14,8 @@ class KeywordCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var keywordLabel: UILabel!
     @IBOutlet weak var removeBtn: UIButton!
+    private var removeBtnAction: ((Keyword?) -> ())?
+    var keyword: Keyword?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,12 +24,19 @@ class KeywordCollectionViewCell: UICollectionViewCell {
         contentView.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
     }
     
-    func setupWith(keyword: String, background: UIColor, showRemoveButton: Bool){
-        self.keywordLabel.text = keyword
-        self.containerView.backgroundColor = background
+    func setupWith(keyword: Keyword, showRemoveButton: Bool, removeBtnAction: ((Keyword?) -> ())? = nil){
+        self.keyword = keyword
+        self.removeBtnAction = removeBtnAction
+        self.keywordLabel.text = keyword.word
+        self.containerView.backgroundColor = keyword.bgColor
         if !showRemoveButton{
             removeBtn?.removeFromSuperview()
         }
     }
+    
+    @IBAction func removeKeyword(_ sender: UIButton) {
+        removeBtnAction?(keyword)
+    }
+    
     
 }

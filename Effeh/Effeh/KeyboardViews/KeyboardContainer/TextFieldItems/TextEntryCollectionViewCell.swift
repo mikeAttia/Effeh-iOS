@@ -14,6 +14,7 @@ class TextEntryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var textField: UITextField!{
         didSet{
             textField.borderStyle = .none
+            textField.isUserInteractionEnabled = false
         }
     }
     @IBOutlet weak var viewWidth: NSLayoutConstraint!
@@ -33,6 +34,19 @@ class TextEntryCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    func insertCharacter(_ char: String){
+        textField.text?.append(char)
+    }
+    
+    func deleteLastChar(){
+        var text = textField.text
+        guard text?.count != 0 else {
+            return
+        }
+        text?.removeLast()
+        textField.text = text
     }
 
 }

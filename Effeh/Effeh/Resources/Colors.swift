@@ -12,10 +12,6 @@ struct Colors{
     
     // Search bar
     static let searchBarBorderColor = UIColor.lightGray
-    static func randomKeywordBackgroundColor() -> UIColor{
-        //TODO: Make a palette of colors for the keyword tags and return a random color of them
-        return .red
-    }
     
     //MARK: - Tab Bar colors
     static let selectedTabIconTint = UIColor.black
@@ -23,7 +19,10 @@ struct Colors{
     static let selectedTabBackground = UIColor.white
     static let unselectedTabBackground = UIColor.clear
     
-    
+    //MARK: - Keywords background colors
+    static var randomKeywordBackgroundColor: UIColor{
+        return .red
+    }
     
     
 }

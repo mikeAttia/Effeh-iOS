@@ -6,13 +6,14 @@
 //  Copyright © 2018 Michael Attia. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Keyword {
     
     var word: String
     var id: String
     var memeIds: [String] = []
+    var bgColor: UIColor
     
     static func keywordsListFrom(_ json: NSDictionary?) -> [Keyword]{
         guard let dict = json, let json = dict as? [String: Any] else {return []}
@@ -21,10 +22,9 @@ struct Keyword {
             if let obj = json[key] as? [String: Any]{
                 let word = obj["keyword"] as! String
                 let memeIds = obj["memes"] as! [String]
-                keywordsList.append(Keyword(word: word, id: key, memeIds: memeIds))
+                keywordsList.append(Keyword(word: word, id: key, memeIds: memeIds, bgColor: Colors.randomKeywordBackgroundColor))
             }
         }
         return keywordsList
     }
-    
 }

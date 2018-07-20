@@ -10,6 +10,7 @@ import Foundation
 import Firebase
 import FirebaseAuth
 import FirebaseDatabase
+import Kingfisher
 
 typealias JSON = [String: AnyObject]
 
@@ -37,7 +38,22 @@ class DataStore{
         // Fetch keywords list
         firebaseStoreRef = Database.database().reference()
         fetchListOfKeywords()
+        
+        // Limit Kingfisher Cache to 50 megabytes
+        ImageCache.default.maxDiskCacheSize = 50 * 1024 * 1024
+        ImageCache.default.maxMemoryCost = 50 * 1024 * 1024
     }
+    
+    var userLoggedIn: Bool{
+        guard let user = Auth.auth().currentUser else{
+            return false
+        }
+        return !user.isAnonymous
+    }
+}
+
+// MARK: - Keywords Data Operations
+extension DataStore{
     
     private func fetchListOfKeywords(){
         firebaseStoreRef.child("keywords").observeSingleEvent(of: .value, with: { snapShot in
@@ -49,16 +65,13 @@ class DataStore{
         }
     }
     
-    var userLoggedIn: Bool{
-        guard let user = Auth.auth().currentUser else{
-            return false
-        }
-        return !user.isAnonymous
+    func fetchKeywordsContaining(_ cue: String, completion: ( [Keyword]?, Error? ) -> Void) {
+        completion(keywordsList.filter{$0.word.contains(cue)}, nil)
     }
-    
-    func getKeywordsContaining(_ cue: String) -> [Keyword] {
-        return keywordsList.filter{$0.word.contains(cue)}
-    }
+}
+
+// MARK: - Memes Data Operations
+extension DataStore{
     
     func getSortedMemesIdsWith(keywords: [Keyword]) -> [String] {
         let fullList = keywords.reduce([], { (list, keyword) -> [String] in
@@ -73,6 +86,17 @@ class DataStore{
             .map{$0.id}
     }
     
+    func fetchMemeWith(id: String, completion: @escaping (Meme?) -> Void){
+        firebaseStoreRef.child("memes").child(id).observeSingleEvent(of: .value) { snapShot in
+            if let data = snapShot.value as? NSDictionary, let json = data as? [String: Any]{
+                completion(Meme(id: id, dict: json))
+            }else{
+                //FIXME: Fix error and send it to callback
+                completion(nil)
+            }
+        }
+    }
+    
     func getUserFavMemes() -> [Meme] {
         //FIXME: implement
         return []
@@ -82,6 +106,5 @@ class DataStore{
         //FIXME: implement
         return []
     }
-    
-    
 }
+

@@ -26,6 +26,9 @@ class ImageReel: UIView {
         }
     }
     
+    var memeIds: [String] = []
+    weak var imageFetcher: ImageFetcher?
+    
     
     // MARK: - Initialization
     override init(frame: CGRect) {
@@ -49,12 +52,13 @@ class ImageReel: UIView {
 
 extension ImageReel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return memeIds.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: imageItemCellId, for: indexPath) as! ImageItemCollectionViewCell
-        cell.imageView.image = #imageLiteral(resourceName: "globe")
+        cell.imageFetcher = imageFetcher
+        cell.memeId = memeIds[indexPath.row]
         return cell
     }
     

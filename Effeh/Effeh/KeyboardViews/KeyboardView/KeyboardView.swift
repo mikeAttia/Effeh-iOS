@@ -8,8 +8,11 @@
 
 import UIKit
 
+protocol KeyboardViewDelegate: KeyboardkeyButtonListener {
+    func userSelected(keyword: Keyword)
+}
+
 class KeyboardView: UIView {
-    
     // MARK: - Constants
     private let searchItemCellId = "Search_Item"
     private let KeywordsViewHeight: CGFloat = 50
@@ -23,12 +26,19 @@ class KeyboardView: UIView {
     }()
     lazy var keyHeight: CGFloat = keyWidth * 1.2
     private let layout = KeyboardLayout.arabicLayout
+    weak var delegate: KeyboardViewDelegate?
+    var keywordsList: [Keyword] = []{
+        didSet{
+            keywordsView.reloadData()
+        }
+    }
     
     // MARK: - Views
     lazy var keywordsView: UICollectionView = {
         let width = UIScreen.main.bounds.width
         let layout = UICollectionViewFlowLayout()
         layout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
+        layout.scrollDirection = .horizontal
         let view = UICollectionView(frame: CGRect(x: 0, y: 0, width: width, height: KeywordsViewHeight), collectionViewLayout: layout)
         view.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         view.delegate = self
@@ -37,6 +47,7 @@ class KeyboardView: UIView {
         view.register(searchItemNib, forCellWithReuseIdentifier: searchItemCellId)
         view.backgroundColor = .white
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = UIColor.groupTableViewBackground
         return view
     }()
     let keyboardKeysContainer = UIView()
@@ -61,6 +72,7 @@ class KeyboardView: UIView {
     private func initView(){
         layoutKeys(containerView: keyboardKeysContainer)
         addSubViewsWithConstraints()
+        self.backgroundColor = UIColor.groupTableViewBackground
     }
     
     // MARK: - Subviews initialization
@@ -72,7 +84,7 @@ class KeyboardView: UIView {
         keywordsView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint(item: keywordsView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: keywordsView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: keywordsView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: keywordsView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: -12).isActive = true
         NSLayoutConstraint(item: keywordsView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: KeywordsViewHeight).isActive = true
         
         // Keyboards Container constraints
@@ -128,6 +140,7 @@ class KeyboardView: UIView {
                                                                 height: keyHeight),
                                                   key: key)
                 }
+                keyButton.listener = self
                 keyboardKeysContainer.addSubview(keyButton)
                 //FIXME: ADD target or delegate to key
                 currentXValue = currentXValue + keyButton.frame.width + keyPadding
@@ -144,10 +157,26 @@ class KeyboardView: UIView {
 
 extension KeyboardView: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return keywordsList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: searchItemCellId, for: indexPath) as! KeywordCollectionViewCell
+        cell.setupWith(keyword: keywordsList[indexPath.row], showRemoveButton: false)
+        return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let keyword = keywordsList[indexPath.row]
+        delegate?.userSelected(keyword: keyword)
+        self.keywordsList = []
+        collectionView.reloadData()
+    }
+}
+
+extension KeyboardView: KeyboardkeyButtonListener {
+    func userTapped(key: KeyboardKey) {
+        delegate?.userTapped(key: key)
+    }
+        
 }

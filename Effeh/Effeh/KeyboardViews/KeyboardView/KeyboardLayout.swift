@@ -50,7 +50,7 @@ struct KeyboardLayout{
              KeyboardKey(type: .backspace , char: "", subCharacters: nil),
              ],
             [KeyboardKey(type: .changeKeyboard, char: "", subCharacters: nil),
-             KeyboardKey(type: .space, char: "", subCharacters: nil),
+             KeyboardKey(type: .space, char: " ", subCharacters: nil),
              KeyboardKey(type: .return, char: "شوف كده", subCharacters: nil)]
             ])
     }

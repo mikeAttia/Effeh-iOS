@@ -10,9 +10,10 @@ import UIKit
 
 class KeyboardkeyButton: UIButton {
 
-    var defaultBackgroundColor: UIColor = .white
-    var highlightBackgroundColor: UIColor = .lightGray
-    var key: KeyboardKey!
+    private var defaultBackgroundColor: UIColor = .white
+    private var highlightBackgroundColor: UIColor = .lightGray
+    private var key: KeyboardKey!
+    weak var listener: KeyboardkeyButtonListener?
     
     convenience init(frame: CGRect, key: KeyboardKey) {
         self.init(frame: frame)
@@ -49,6 +50,15 @@ class KeyboardkeyButton: UIButton {
         layer.shadowRadius = 0.0
         layer.shadowOpacity = 0.35
         self.imageView?.contentMode = .scaleAspectFit
+        self.addTarget(self, action: #selector(userTappedButton), for: .touchUpInside)
+    }
+    
+    @objc func userTappedButton(){
+        listener?.userTapped(key: key)
     }
 
+}
+
+protocol KeyboardkeyButtonListener: class{
+    func userTapped(key: KeyboardKey)
 }
