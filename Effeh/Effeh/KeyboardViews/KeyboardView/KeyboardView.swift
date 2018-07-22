@@ -125,9 +125,10 @@ class KeyboardView: UIView {
                                                   key: key)
                 case .space:
                     let returnWidth = keyWidth * 3
-                    let changeLangWidth = keyWidth * 2
-                    let x = (keyPadding * 2) + changeLangWidth
-                    let width = UIScreen.main.bounds.width - (returnWidth + changeLangWidth) - (keyPadding * 4)
+                    let changeLangWidth = keyWidth * 1.5
+                    let cancelWidth = keyWidth * 1.5
+                    let x = (keyPadding * 3) + changeLangWidth + cancelWidth
+                    let width = UIScreen.main.bounds.width - (returnWidth + changeLangWidth + cancelWidth) - (keyPadding * 5)
                     keyButton = KeyboardkeyButton(frame: CGRect(x: x,
                                                                 y: currentYValue,
                                                                 width: width,
@@ -136,7 +137,13 @@ class KeyboardView: UIView {
                 case .changeKeyboard:
                     keyButton = KeyboardkeyButton(frame: CGRect(x: currentXValue,
                                                                 y: currentYValue,
-                                                                width: keyWidth * 2,
+                                                                width: keyWidth * 1.5,
+                                                                height: keyHeight),
+                                                  key: key)
+                case .cancel:
+                    keyButton = KeyboardkeyButton(frame: CGRect(x: currentXValue,
+                                                                y: currentYValue,
+                                                                width: keyWidth * 1.5,
                                                                 height: keyHeight),
                                                   key: key)
                 }

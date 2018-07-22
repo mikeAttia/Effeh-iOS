@@ -49,7 +49,8 @@ struct KeyboardLayout{
              KeyboardKey(type: .letter, char: "ى", subCharacters: nil),
              KeyboardKey(type: .backspace , char: "", subCharacters: nil),
              ],
-            [KeyboardKey(type: .changeKeyboard, char: "", subCharacters: nil),
+            [KeyboardKey(type: .cancel, char: "Cancel", subCharacters: nil),
+             KeyboardKey(type: .changeKeyboard, char: "", subCharacters: nil),
              KeyboardKey(type: .space, char: " ", subCharacters: nil),
              KeyboardKey(type: .return, char: "شوف كده", subCharacters: nil)]
             ])
@@ -63,6 +64,7 @@ struct KeyboardKey{
         case `return`
         case space
         case changeKeyboard
+        case cancel
     }
     
     let type: KeyType

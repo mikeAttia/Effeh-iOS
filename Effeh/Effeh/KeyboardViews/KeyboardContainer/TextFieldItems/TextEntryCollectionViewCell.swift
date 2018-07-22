@@ -8,17 +8,25 @@
 
 import UIKit
 
+protocol TextEntryListener: class{
+    func didBeginEditing()
+}
+
 class TextEntryCollectionViewCell: UICollectionViewCell {
     
     // Outlets
     @IBOutlet weak var textField: UITextField!{
         didSet{
             textField.borderStyle = .none
-            textField.isUserInteractionEnabled = false
+            textField.delegate = self
+            textField.tintColor = .clear
+//            textField.isUserInteractionEnabled = false
         }
     }
     @IBOutlet weak var viewWidth: NSLayoutConstraint!
     @IBOutlet weak var viewHeight: NSLayoutConstraint!
+    
+    weak var textEntryListener: TextEntryListener?
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -48,5 +56,11 @@ class TextEntryCollectionViewCell: UICollectionViewCell {
         text?.removeLast()
         textField.text = text
     }
+}
 
+extension TextEntryCollectionViewCell: UITextFieldDelegate{
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textEntryListener?.didBeginEditing()
+        textField.resignFirstResponder()
+    }
 }

@@ -19,7 +19,7 @@ class KeyboardkeyButton: UIButton {
         self.init(frame: frame)
         self.key = key
         switch key.type {
-        case .letter, .return, .space:
+        case .letter, .return, .space, .cancel:
             self.setTitle(key.char, for: .normal)
         case .backspace:
             self.setImage(#imageLiteral(resourceName: "arabicBackSpace"), for: .normal)

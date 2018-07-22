@@ -68,20 +68,28 @@ class KeyboardContainer: UIView {
     }
     
     private var laidOut = false
-    private var kb: KeyboardView?
+    private lazy var kb: KeyboardView = {
+        let kb =  KeyboardView(frame: contentContainer.bounds)
+        kb.delegate = self
+        return kb
+    }()
     
     override func layoutSubviews() {
         super.layoutSubviews()
         if !laidOut{
-            imgReel.removeFromSuperview()
-            kb = KeyboardView(frame: contentContainer.bounds)
-            contentContainer.addSubview(kb!)
-            kb?.pinEdgesTo(contentContainer)
-            kb?.delegate = self
+            showKeyboard()
             laidOut = !laidOut
         }
     }
     
+    fileprivate func showKeyboard(){
+        contentContainer.addSubview(kb)
+        kb.pinEdgesTo(contentContainer)
+    }
+    
+    fileprivate func hideKeyboard(){
+        kb.removeFromSuperview()
+    }
 }
 
 
@@ -108,6 +116,7 @@ extension KeyboardContainer: UICollectionViewDataSource, UICollectionViewDelegat
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: editFieldCellId, for: indexPath) as! TextEntryCollectionViewCell
             cell.textField.placeholder = "دور بالافيه"
             cell.setupCell(width: collectionView.frame.width * 0.66, height: collectionView.frame.height)
+            cell.textEntryListener = self
             self.searchFieldCell = cell
             return cell
         }
@@ -132,14 +141,14 @@ extension KeyboardContainer: KeyboardViewDelegate{
             searchFieldCell?.deleteLastChar()
         case .return:
             // Hide keyboard view and clear its search results
-            kb?.removeFromSuperview()
-            kb?.keywordsList = []
+            hideKeyboard()
+            kb.keywordsList = []
             // show image reel view
-            contentContainer.addSubview(imgReel)
-            imgReel.pinEdgesTo(contentContainer)
             imgReel.memeIds = dataStore.getSortedMemesIdsWith(keywords: keywordsList)
         case .changeKeyboard:
             break
+        case .cancel:
+            hideKeyboard()
         }
         if let cue = searchFieldCell?.textField.text{
             dataStore.fetchKeywordsContaining(cue) { (keywords, err) in
@@ -150,7 +159,7 @@ extension KeyboardContainer: KeyboardViewDelegate{
                 let filteredWords = keywords.filter({ (keyword) -> Bool in
                     return !(self.keywordsList.contains{$0.id == keyword.id})
                 })
-                kb?.keywordsList = filteredWords
+                kb.keywordsList = filteredWords
             }
         }
         
@@ -161,4 +170,13 @@ extension KeyboardContainer: ImageFetcher{
     func fetchMemeWith(id: String, completion: @escaping (Meme?) -> Void){
         dataStore.fetchMemeWith(id: id, completion: completion)
     }
+}
+
+extension KeyboardContainer: TextEntryListener{
+    func didBeginEditing() {
+        // show image reel view
+        showKeyboard()
+    }
+    
+    
 }
