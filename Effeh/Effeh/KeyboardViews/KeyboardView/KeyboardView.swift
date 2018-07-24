@@ -51,6 +51,7 @@ class KeyboardView: UIView {
         return view
     }()
     let keyboardKeysContainer = UIView()
+    var nextKeyboardButton: UIButton?
     
     // MARK: - Initialization
     
@@ -140,6 +141,7 @@ class KeyboardView: UIView {
                                                                 width: keyWidth * 1.5,
                                                                 height: keyHeight),
                                                   key: key)
+                    self.nextKeyboardButton = keyButton
                 case .cancel:
                     keyButton = KeyboardkeyButton(frame: CGRect(x: currentXValue,
                                                                 y: currentYValue,

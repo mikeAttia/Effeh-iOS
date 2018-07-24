@@ -77,18 +77,28 @@ class KeyboardContainer: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         if !laidOut{
-            showKeyboard()
+            contentContainer.addSubview(kb)
+            kb.pinEdgesTo(contentContainer)
             laidOut = !laidOut
         }
     }
     
     fileprivate func showKeyboard(){
-        contentContainer.addSubview(kb)
-        kb.pinEdgesTo(contentContainer)
+        
+        kb.isHidden = false
     }
     
     fileprivate func hideKeyboard(){
-        kb.removeFromSuperview()
+        kb.isHidden = true
+    }
+    
+    func setupChangeKeyboardAction(owner: UIInputViewController){
+        imgReel.tabsView.nextKeyboardItem.addTarget(owner,
+                                                    action: #selector(owner.handleInputModeList(from:with:)),
+                                                    for: .allTouchEvents)
+        kb.nextKeyboardButton?.addTarget(owner,
+                                        action: #selector(owner.handleInputModeList(from:with:)),
+                                        for: .allTouchEvents)
     }
 }
 
@@ -162,7 +172,6 @@ extension KeyboardContainer: KeyboardViewDelegate{
                 kb.keywordsList = filteredWords
             }
         }
-        
     }
 }
 
@@ -177,6 +186,4 @@ extension KeyboardContainer: TextEntryListener{
         // show image reel view
         showKeyboard()
     }
-    
-    
 }
